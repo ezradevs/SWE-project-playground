@@ -89,6 +89,11 @@ def index():
         total_members=total_members
     )
 
+@app.route('/board')
+def board():
+    # Display an interactive chess board for two players on the same device.
+    return render_template('board.html')
+
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     # Admin login route. Only users in the users table can log in.
