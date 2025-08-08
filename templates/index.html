@@ -21,6 +21,9 @@
     </div>
     <!-- Quick action buttons for admins -->
     <div class="dashboard-actions">
+        <a href="{{ url_for('board') }}" class="btn-primary">
+            <i class="fa-solid fa-chess-board icon-left"></i>Open Chess Board
+        </a>
         {% if session.username %}
         <a href="{{ url_for('create_tournament') }}" class="btn-primary">
             <i class="fa-solid fa-plus icon-left"></i>Create New Tournament

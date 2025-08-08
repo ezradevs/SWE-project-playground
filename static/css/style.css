@@ -1637,3 +1637,15 @@ a.no-underline {
         margin-bottom: 0.7rem;
     }
 }
+/* --- Board Page Styles --- */
+.board-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#board {
+    width: 400px;
+    max-width: 100%;
+}
